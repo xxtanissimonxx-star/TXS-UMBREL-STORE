@@ -2,12 +2,6 @@ version: "3.7"
 
 services:
 
-  app_proxy:
-    environment:
-      APP_HOST: txs-crafty_crafty_1
-      APP_PORT: 8443
-      PROXY_AUTH_ADD: "false"
-
   crafty:
     image: registry.gitlab.com/crafty-controller/crafty-4:4.10.8
     restart: on-failure
@@ -17,15 +11,17 @@ services:
       TZ: Europe/Berlin
 
     ports:
+      # Crafty Webinterface (HTTPS)
+      - "8443:8443"
+
+      # Dynmap
+      - "8523:8123"
+
       # Bedrock
       - "19132:19132/udp"
 
-      # Minecraft Java Server
+      # Minecraft Java
       - "25500-25600:25500-25600"
-
-      # Crafty Dynmap
-      # außen 8523, innen 8123
-      - "8523:8123"
 
     volumes:
       - ${APP_DATA_DIR}/backups:/crafty/backups
