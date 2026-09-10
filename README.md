@@ -8,6 +8,8 @@ Eigener Umbrel App Store für Apps, die ich auf meinem Umbrel-Server verwenden m
 
 ## Struktur
 
+
+```text
 TXS-UMBREL-STORE/
 ├── umbrel-app-store.yml
 │
@@ -15,6 +17,7 @@ TXS-UMBREL-STORE/
     ├── umbrel-app.yml
     ├── docker-compose.yml
     └── exports.sh
+```
 
 ## Apps hinzufügen
 
