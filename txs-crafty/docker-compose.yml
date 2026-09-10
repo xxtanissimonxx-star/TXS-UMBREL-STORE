@@ -1,3 +1,5 @@
+version: "3.7"
+
 services:
 
   app_proxy:
@@ -7,15 +9,23 @@ services:
       PROXY_AUTH_ADD: "false"
 
   crafty:
-    image: registry.gitlab.com/crafty-controller/crafty-4:latest
-    restart: always
+    image: registry.gitlab.com/crafty-controller/crafty-4:4.10.8
+    restart: on-failure
+    stop_grace_period: 1m
 
     environment:
       TZ: Europe/Berlin
-  
-  ports:
-    - "19132:19132/udp"
-    - "25500-25600:25500-25600"
+
+    ports:
+      # Bedrock
+      - "19132:19132/udp"
+
+      # Minecraft Java Server
+      - "25500-25600:25500-25600"
+
+      # Crafty Dynmap
+      # außen 8523, innen 8123
+      - "8523:8123"
 
     volumes:
       - ${APP_DATA_DIR}/backups:/crafty/backups
