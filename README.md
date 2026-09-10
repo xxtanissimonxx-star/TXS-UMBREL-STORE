@@ -22,11 +22,12 @@ TXS-UMBREL-STORE/
 ## Apps hinzufügen
 
 Für jede neue App wird ein eigener Ordner angelegt:
-
+```text
 txs-appname/
 ├── umbrel-app.yml
 ├── docker-compose.yml
 └── exports.sh
+```
 
 Die App-ID muss mit der Store-ID "txs" beginnen.
 
