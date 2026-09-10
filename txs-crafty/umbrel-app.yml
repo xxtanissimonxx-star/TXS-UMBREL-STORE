@@ -6,7 +6,8 @@ category: utilities
 
 name: Crafty Controller
 
-version: "4.10.8"
+version: "5.10.8"
+# version: "4.10.8"
 
 tagline: Minecraft Server Management
 
