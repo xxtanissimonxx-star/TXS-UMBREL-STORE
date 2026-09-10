@@ -1,0 +1,39 @@
+manifestVersion: 1
+
+id: txs-crafty
+
+category: utilities
+
+name: Crafty Controller
+
+version: "4.10.8"
+
+tagline: Minecraft Server Management
+
+description: >-
+  Crafty Controller is a Minecraft server management panel
+  for managing Minecraft servers through a web interface.
+
+developer: Crafty Controller
+
+website: https://craftycontrol.com
+
+dependencies: []
+
+repo: https://gitlab.com/crafty-controller/crafty-4
+
+support: https://gitlab.com/crafty-controller/crafty-4/-/issues
+
+port: 8443
+
+gallery: []
+
+path: ""
+
+defaultPassword: ""
+
+releaseNotes: ""
+
+submitter: TXS
+
+submission: ""
