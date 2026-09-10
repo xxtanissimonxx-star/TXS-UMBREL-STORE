@@ -3,7 +3,7 @@ version: "3.7"
 services:
 
   crafty:
-    image: registry.gitlab.com/crafty-controller/crafty-4:4.10.7
+    image: registry.gitlab.com/crafty-controller/crafty-4:4.10.8
     restart: on-failure
     stop_grace_period: 1m
 
