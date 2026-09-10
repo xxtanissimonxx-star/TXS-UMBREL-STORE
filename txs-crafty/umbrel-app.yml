@@ -6,9 +6,11 @@ category: utilities
 
 name: Crafty Controller
 
-version: "4.10.8.1"
+version: "4.10.8"
 
 tagline: Minecraft Server Management
+
+icon: https://docs.craftycontrol.com/img/favicon.ico
 
 description: >-
   Crafty Controller is a Minecraft server management panel
