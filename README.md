@@ -95,6 +95,14 @@ image: registry.gitlab.com/crafty-controller/crafty-4:4.10.9
 
 Damit wird Crafty auf Version `4.10.9` aktualisiert.
 
+
+### 🔄 Aktuelle Crafty-Version
+
+Die aktuell veröffentlichte Version findest du hier:
+
+[Crafty Releases](https://gitlab.com/crafty-controller/crafty-4/-/releases)
+
+
 ---
 
 ### 📝 Release Notes
