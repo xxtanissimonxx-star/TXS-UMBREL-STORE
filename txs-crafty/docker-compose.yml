@@ -12,12 +12,10 @@ services:
 
     environment:
       TZ: Europe/Berlin
-
-    ports:
-      - "8443:8443"
-      - "8123:8123"
-      - "19132:19132/udp"
-      - "25500-25600:25500-25600"
+  
+  ports:
+    - "19132:19132/udp"
+    - "25500-25600:25500-25600"
 
     volumes:
       - ${APP_DATA_DIR}/backups:/crafty/backups
